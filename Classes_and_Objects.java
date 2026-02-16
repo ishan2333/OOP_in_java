@@ -4,6 +4,12 @@ public class Classes_and_Objects {
     
     public static class Fruits {
     int price ;
+
+    void sell(){
+        System.out.println(this.price);
+        System.out.println("SELL SUCCESS");
+
+    }
     }
 
     public static void main(String[]  args){
@@ -12,6 +18,7 @@ public class Classes_and_Objects {
         Fruits apple = new Fruits() ;
         apple.price = 234;
         System.out.println(apple.price);
+        apple.sell();
 
     }
 }
